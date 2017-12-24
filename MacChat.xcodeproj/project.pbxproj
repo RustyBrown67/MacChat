@@ -8,19 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		187070AD1FF05D41005F2E76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187070AC1FF05D41005F2E76 /* AppDelegate.swift */; };
-		187070AF1FF05D41005F2E76 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187070AE1FF05D41005F2E76 /* ViewController.swift */; };
 		187070B11FF05D41005F2E76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187070B01FF05D41005F2E76 /* Assets.xcassets */; };
 		187070B41FF05D41005F2E76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187070B21FF05D41005F2E76 /* Main.storyboard */; };
+		187070C01FF05F34005F2E76 /* ToolbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187070BF1FF05F34005F2E76 /* ToolbarVC.swift */; };
+		187070C21FF05F47005F2E76 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187070C11FF05F47005F2E76 /* ChannelVC.swift */; };
+		187070C41FF05F56005F2E76 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187070C31FF05F56005F2E76 /* ChatVC.swift */; };
+		187070C61FF065C8005F2E76 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187070C51FF065C8005F2E76 /* MainWindowController.swift */; };
+		187070C91FF06670005F2E76 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187070C81FF06670005F2E76 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		187070A91FF05D41005F2E76 /* MacChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187070AC1FF05D41005F2E76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		187070AE1FF05D41005F2E76 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		187070B01FF05D41005F2E76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		187070B31FF05D41005F2E76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		187070B51FF05D41005F2E76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		187070B61FF05D41005F2E76 /* MacChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacChat.entitlements; sourceTree = "<group>"; };
+		187070BF1FF05F34005F2E76 /* ToolbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarVC.swift; sourceTree = "<group>"; };
+		187070C11FF05F47005F2E76 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		187070C31FF05F56005F2E76 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		187070C51FF065C8005F2E76 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		187070C81FF06670005F2E76 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,14 +61,50 @@
 		187070AB1FF05D41005F2E76 /* MacChat */ = {
 			isa = PBXGroup;
 			children = (
+				187070C71FF06657005F2E76 /* Utilities */,
+				187070BE1FF05F10005F2E76 /* Model */,
+				187070BD1FF05F0B005F2E76 /* View */,
+				187070BC1FF05F03005F2E76 /* Controller */,
 				187070AC1FF05D41005F2E76 /* AppDelegate.swift */,
-				187070AE1FF05D41005F2E76 /* ViewController.swift */,
 				187070B01FF05D41005F2E76 /* Assets.xcassets */,
 				187070B21FF05D41005F2E76 /* Main.storyboard */,
 				187070B51FF05D41005F2E76 /* Info.plist */,
 				187070B61FF05D41005F2E76 /* MacChat.entitlements */,
 			);
 			path = MacChat;
+			sourceTree = "<group>";
+		};
+		187070BC1FF05F03005F2E76 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				187070BF1FF05F34005F2E76 /* ToolbarVC.swift */,
+				187070C11FF05F47005F2E76 /* ChannelVC.swift */,
+				187070C31FF05F56005F2E76 /* ChatVC.swift */,
+				187070C51FF065C8005F2E76 /* MainWindowController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		187070BD1FF05F0B005F2E76 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		187070BE1FF05F10005F2E76 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		187070C71FF06657005F2E76 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				187070C81FF06670005F2E76 /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,8 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				187070AF1FF05D41005F2E76 /* ViewController.swift in Sources */,
+				187070C41FF05F56005F2E76 /* ChatVC.swift in Sources */,
+				187070C01FF05F34005F2E76 /* ToolbarVC.swift in Sources */,
+				187070C21FF05F47005F2E76 /* ChannelVC.swift in Sources */,
 				187070AD1FF05D41005F2E76 /* AppDelegate.swift in Sources */,
+				187070C61FF065C8005F2E76 /* MainWindowController.swift in Sources */,
+				187070C91FF06670005F2E76 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
