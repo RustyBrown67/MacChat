@@ -15,6 +15,9 @@
 		187070C41FF05F56005F2E76 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187070C31FF05F56005F2E76 /* ChatVC.swift */; };
 		187070C61FF065C8005F2E76 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187070C51FF065C8005F2E76 /* MainWindowController.swift */; };
 		187070C91FF06670005F2E76 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187070C81FF06670005F2E76 /* Constants.swift */; };
+		18A8A4B01FF2749C00762278 /* ClickBlockingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A8A4AF1FF2749C00762278 /* ClickBlockingView.swift */; };
+		18A8A4B31FF2865D00762278 /* ModalLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A8A4B21FF2865D00762278 /* ModalLogin.xib */; };
+		18A8A4B51FF2868F00762278 /* ModalLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A8A4B41FF2868F00762278 /* ModalLogin.swift */; };
 		18D23EE71FF1B10B00229153 /* NSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D23EE61FF1B10B00229153 /* NSButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +33,9 @@
 		187070C31FF05F56005F2E76 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		187070C51FF065C8005F2E76 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
 		187070C81FF06670005F2E76 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		18A8A4AF1FF2749C00762278 /* ClickBlockingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickBlockingView.swift; sourceTree = "<group>"; };
+		18A8A4B21FF2865D00762278 /* ModalLogin.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalLogin.xib; sourceTree = "<group>"; };
+		18A8A4B41FF2868F00762278 /* ModalLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalLogin.swift; sourceTree = "<group>"; };
 		18D23EE61FF1B10B00229153 /* NSButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +69,7 @@
 		187070AB1FF05D41005F2E76 /* MacChat */ = {
 			isa = PBXGroup;
 			children = (
+				18A8A4B11FF2864300762278 /* Xibs */,
 				187070C71FF06657005F2E76 /* Utilities */,
 				187070BE1FF05F10005F2E76 /* Model */,
 				187070BD1FF05F0B005F2E76 /* View */,
@@ -90,6 +97,8 @@
 		187070BD1FF05F0B005F2E76 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18A8A4AF1FF2749C00762278 /* ClickBlockingView.swift */,
+				18A8A4B41FF2868F00762278 /* ModalLogin.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -108,6 +117,14 @@
 				18D23EE61FF1B10B00229153 /* NSButton.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		18A8A4B11FF2864300762278 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				18A8A4B21FF2865D00762278 /* ModalLogin.xib */,
+			);
+			path = Xibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				187070B11FF05D41005F2E76 /* Assets.xcassets in Resources */,
+				18A8A4B31FF2865D00762278 /* ModalLogin.xib in Resources */,
 				187070B41FF05D41005F2E76 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,9 +200,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				187070C41FF05F56005F2E76 /* ChatVC.swift in Sources */,
+				18A8A4B51FF2868F00762278 /* ModalLogin.swift in Sources */,
 				187070C01FF05F34005F2E76 /* ToolbarVC.swift in Sources */,
 				187070C21FF05F47005F2E76 /* ChannelVC.swift in Sources */,
 				187070AD1FF05D41005F2E76 /* AppDelegate.swift in Sources */,
+				18A8A4B01FF2749C00762278 /* ClickBlockingView.swift in Sources */,
 				187070C61FF065C8005F2E76 /* MainWindowController.swift in Sources */,
 				187070C91FF06670005F2E76 /* Constants.swift in Sources */,
 				18D23EE71FF1B10B00229153 /* NSButton.swift in Sources */,
